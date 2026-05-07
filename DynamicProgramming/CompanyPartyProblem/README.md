@@ -23,15 +23,14 @@ Let `children(u)` be the set of `u`'s direct subordinates.
 
 - **If `u` attends** → none of its children can attend (otherwise they'd be with their boss).  
   So we add 1 for `u` plus the best of each child's *not‑attending* state:
-  $$
-  dp[u][1] = 1 + \sum_{v \in children(u)} dp[v][0]
-  $$
+
+
+  $$dp[u][1] = 1 + \sum_{v \in children(u)} dp[v][0]$$
 
 - **If `u` does NOT attend** → each child is free to attend or not, independently.  
   We take the maximum of the two options for each child:
-  $$
-  dp[u][0] = \sum_{v \in children(u)} \max(dp[v][0],\ dp[v][1])
-  $$
+
+  $$dp[u][0] = \sum_{v \in children(u)} \max(dp[v][0],\ dp[v][1])$$
 
 ---
 
@@ -45,9 +44,7 @@ $$
 ### Answer
 Let `root` be the CEO (root of the tree).  
 Maximum attendees =
-$$
-\max(dp[root][0],\ dp[root][1])
-$$
+$$\max(dp[root][0],\ dp[root][1])$$
 
 ---
 
