@@ -15,3 +15,9 @@ Code is mostly written in Go.
 
   Problems solved by exploring choices and undoing when stuck.  
   Includes: N‑Queens, subset sum, Knight's tour.
+
+
+- ### [Dynamic Programming](./DynamicProgramming)
+
+    Problems solved by breaking into overlapping subproblems.
+    Includes: Fibonacci, knapsack problem, longest increasing subsequence.
