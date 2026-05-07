@@ -19,5 +19,5 @@ Code is mostly written in Go.
 
 - ### [Dynamic Programming](./DynamicProgramming)
 
-    Problems solved by breaking into overlapping subproblems.
-    Includes: Fibonacci, knapsack problem, longest increasing subsequence.
+  Problems solved by breaking into overlapping subproblems.  
+  Includes: Fibonacci, knapsack problem, longest increasing subsequence.
